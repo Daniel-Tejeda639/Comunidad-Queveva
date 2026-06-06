@@ -368,51 +368,6 @@ body {
 }
 
 /* ==========================================================================
-   SECCIÓN EDUCACIÓN Y VIDEO
-   ========================================================================== */
-.video-wrapper {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-    border-radius: 4px;
-    box-shadow: var(--shadow-md);
-    background-color: #000;
-}
-
-.video-wrapper video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.video-caption {
-    display: block;
-    margin-top: 15px;
-    font-size: 0.85rem;
-    color: var(--text-muted);
-    text-align: center;
-    font-style: italic;
-}
-
-.highlight-box {
-    background-color: var(--bg-light);
-    border-left: 4px solid var(--primary-color);
-    padding: 25px;
-    margin-top: 30px;
-    border-radius: 0 4px 4px 0;
-}
-
-.highlight-box h4 {
-    color: var(--primary-color);
-    font-size: 1.1rem;
-    margin-bottom: 10px;
-}
-
-/* ==========================================================================
    GALERÍA DINÁMICA
    ========================================================================== */
 .gallery-grid {
@@ -612,11 +567,11 @@ body {
 }
 
 /* ==========================================================================
-   ANIMACIONES (CORREGIDO PARA EVITAR BLOQUEOS)
+   ANIMACIONES (CONFIGURADO PARA LEER DE FORMA FLUIDA)
    ========================================================================== */
 .reveal {
-    opacity: 1;               /* Forzado a 1 para asegurar la visibilidad global */
-    transform: translateY(0);  /* Forzado a 0 para quitar bloqueos del render */
+    opacity: 1;
+    transform: translateY(0);
     transition: opacity 0.8s ease, transform 0.8s var(--transition-smooth);
 }
 
