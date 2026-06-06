@@ -244,8 +244,7 @@ body {
     position: relative;
     height: 100vh;
     min-height: 600px;
-    background: url('img/foto1.jpg') no-repeat center center/cover;
-    /* Respaldo elegante si no hay imagen de inmediato */
+    background: url('img/foto1.jpeg') no-repeat center center/cover;
     background-color: var(--primary-color); 
     display: flex;
     align-items: center;
@@ -373,7 +372,7 @@ body {
    ========================================================================== */
 .video-wrapper {
     position: relative;
-    padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+    padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
     border-radius: 4px;
@@ -414,7 +413,7 @@ body {
 }
 
 /* ==========================================================================
-   GALERÍA DINÁMICA (28 IMÁGENES)
+   GALERÍA DINÁMICA
    ========================================================================== */
 .gallery-grid {
     display: grid;
@@ -425,7 +424,7 @@ body {
 .gallery-item {
     position: relative;
     overflow: hidden;
-    padding-bottom: 75%; /* Proporción 4:3 fija para homogeneidad */
+    padding-bottom: 75%;
     border-radius: 4px;
     box-shadow: var(--shadow-sm);
     cursor: pointer;
@@ -465,7 +464,6 @@ body {
     transition: transform 0.4s var(--transition-smooth);
 }
 
-/* Hover de la galería */
 .gallery-item:hover img {
     transform: scale(1.05);
 }
@@ -594,7 +592,6 @@ body {
     text-align: center;
 }
 
-/* Botones de control del Lightbox */
 .lightbox-close, .lightbox-prev, .lightbox-next {
     position: absolute;
     background: none;
@@ -615,11 +612,11 @@ body {
 }
 
 /* ==========================================================================
-   ANIMACIONES (SCROLL REVEAL NATIVO)
+   ANIMACIONES (CORREGIDO PARA EVITAR BLOQUEOS)
    ========================================================================== */
 .reveal {
-    opacity: 0;
-    transform: translateY(30px);
+    opacity: 1;               /* Forzado a 1 para asegurar la visibilidad global */
+    transform: translateY(0);  /* Forzado a 0 para quitar bloqueos del render */
     transition: opacity 0.8s ease, transform 0.8s var(--transition-smooth);
 }
 
@@ -645,7 +642,6 @@ body {
 }
 
 @media (max-width: 768px) {
-    /* Menú móvil desplegable */
     .nav-toggle { display: block; }
     .nav-menu {
         position: absolute;
