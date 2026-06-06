@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 2. GENERACIÓN DINÁMICA DE LA GALERÍA (14 IMÁGENES .JPEG)
     const galleryGrid = document.getElementById('gallery-grid');
-    const totalImages = 14; // Cambiar a 28 si subes las 28 fotos completas
+    const totalImages = 14; 
 
     if (galleryGrid) {
         for (let i = 1; i <= totalImages; i++) {
