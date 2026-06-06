@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         item.setAttribute('data-index', i);
 
         item.innerHTML = `
-            <img src="img/foto${i}.jpg" alt="Fotografía ${i} - Comunidad Queveva" loading="lazy">
+            <img src="img/foto${i}.jpeg" alt="Fotografía ${i} - Comunidad Queveva" loading="lazy">
             <div class="gallery-overlay">
                 <div class="gallery-info">
                     <span>Fotografía ${i}</span>
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function showLightbox(index) {
         currentImgIndex = parseInt(index);
-        lightboxImg.src = `img/foto${currentImgIndex}.jpg`;
+        lightboxImg.src = `img/foto${currentImgIndex}.jpeg`;
         lightboxCaption.textContent =
             `Fotografía ${currentImgIndex} de ${totalImages}`;
         lightbox.classList.add('active');
