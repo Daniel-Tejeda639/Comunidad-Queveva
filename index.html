@@ -3,18 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Proyecto académico sobre la Comunidad Indígena Queveva (Tolú Viejo, Sucre) y el acceso a la educación superior mediante el Fondo Especial ICETEX.">
+    <meta name="theme-color" content="#14352a">
     <title>Comunidad Indígena Queveva | Acceso a la Educación Superior</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
 
+    <a href="#acerca" class="skip-link">Saltar al contenido</a>
+
     <header class="main-header">
         <div class="header-container">
-            <a href="#" class="logo">Comunidad <span>Queveva</span></a>
-            <button class="nav-toggle" aria-label="Abrir menú">
+            <a href="#inicio" class="logo">Comunidad <span>Queveva</span></a>
+            <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
                 <span class="hamburger"></span>
             </button>
             <nav class="nav-menu">
@@ -35,10 +40,11 @@
             <div class="hero-overlay"></div>
             <div class="hero-content reveal">
                 <span class="hero-badge">Proyecto Académico · Fondo Especial ICETEX</span>
-                <h1>Comunidad Indígena Queveva</h1>
+                <h1>Comunidad Indígena <em>Queveva</em></h1>
                 <p>Preservando la identidad cultural, transformando el territorio a través de la educación superior y el desarrollo comunitario.</p>
                 <a href="#acerca" class="btn btn-primary">Explorar Proyecto</a>
             </div>
+            <a href="#acerca" class="scroll-cue" aria-label="Bajar a la siguiente sección"><span></span></a>
         </section>
 
         <section id="acerca" class="about-section section-padding">
@@ -69,17 +75,23 @@
                 </div>
                 <div class="grid-3">
                     <div class="card reveal">
-                        <div class="card-icon">📍</div>
+                        <div class="card-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                        </div>
                         <h3>Ubicación Geográfica</h3>
                         <p>Tolú Viejo, Sucre, Colombia. Un territorio caracterizado por su riqueza natural, formaciones ecológicas y un arraigo profundo con la región del Caribe colombiano.</p>
                     </div>
                     <div class="card reveal delay-1">
-                        <div class="card-icon">🌿</div>
+                        <div class="card-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+                        </div>
                         <h3>Entorno Rural</h3>
                         <p>[Espacio para detallar el contexto ambiental, las características del suelo, la biodiversidad local y la relación mística y de respeto que la comunidad mantiene con sus recursos naturales.]</p>
                     </div>
                     <div class="card reveal delay-2">
-                        <div class="card-icon">🌾</div>
+                        <div class="card-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        </div>
                         <h3>Dinámicas Sociales</h3>
                         <p>[Espacio para describir la organización comunitaria, las principales actividades económicas de sustento como la agricultura artesanal y los retos del desarrollo de infraestructura local.]</p>
                     </div>
@@ -89,13 +101,13 @@
 
         <section id="educacion" class="education-section section-padding">
             <div class="container">
-                <div class="reveal" style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <div class="education-inner reveal">
                     <span class="section-subtitle">El Camino del Saber</span>
                     <h2 class="section-title">Educación y Oportunidades</h2>
-                    <p style="font-size: 1.15rem; margin-bottom: 30px;">El acceso a la educación superior constituye una herramienta de emancipación y desarrollo fundamental para las juventudes de la comunidad Queveva. Romper las barreras de la exclusión geográfica y socioeconómica permite la formación de profesionales que retornen a liderar procesos en su territorio.</p>
-                    <div class="highlight-box" style="text-align: left; border-left: 4px solid var(--primary-color); background-color: var(--bg-light); padding: 30px; border-radius: 4px;">
-                        <h4 style="color: var(--primary-color); font-size: 1.25rem; margin-bottom: 10px;">Fondo Especial ICETEX</h4>
-                        <p style="margin: 0;">El Fondo para Comunidades Indígenas del ICETEX representa una oportunidad histórica de inclusión, facilitando el ingreso, permanencia y graduación de estudiantes indígenas en universidades del país.</p>
+                    <p class="education-lead">El acceso a la educación superior constituye una herramienta de emancipación y desarrollo fundamental para las juventudes de la comunidad Queveva. Romper las barreras de la exclusión geográfica y socioeconómica permite la formación de profesionales que retornen a liderar procesos en su territorio.</p>
+                    <div class="highlight-box">
+                        <h4>Fondo Especial ICETEX</h4>
+                        <p>El Fondo para Comunidades Indígenas del ICETEX representa una oportunidad histórica de inclusión, facilitando el ingreso, permanencia y graduación de estudiantes indígenas en universidades del país.</p>
                     </div>
                 </div>
             </div>
@@ -108,7 +120,7 @@
                     <h2 class="section-title">Galería Fotográfica</h2>
                     <p class="section-lead">Una mirada detallada a la cotidianidad, el territorio y la riqueza cultural de la Comunidad Queveva a través de sus fotografías seleccionadas.</p>
                 </div>
-                <div id="gallery-grid" class="gallery-grid reveal"></div>
+                <div id="gallery-grid" class="gallery-grid"></div>
             </div>
         </section>
 
@@ -128,7 +140,7 @@
                     <div class="conclusions-box reveal delay-1">
                         <span class="section-subtitle">Reflexión Final</span>
                         <h2 class="section-title">Conclusiones</h2>
-                        <p>La articulación entre el estado (a través del ICETEX), la academia y los cabildos indígenas demuestra que la equidad social inicia en las aulas de clase. Preservar la herencia cultural del pueblo Queveva no implica aislarlo, sino dotarlo de las herramientas del saber global para que defienda su soberanía, su memory histórica y su territorio de manera profesional y técnica.</p>
+                        <p>La articulación entre el estado (a través del ICETEX), la academia y los cabildos indígenas demuestra que la equidad social inicia en las aulas de clase. Preservar la herencia cultural del pueblo Queveva no implica aislarlo, sino dotarlo de las herramientas del saber global para que defienda su soberanía, su memoria histórica y su territorio de manera profesional y técnica.</p>
                     </div>
                 </div>
             </div>
@@ -140,7 +152,7 @@
             <div class="footer-info">
                 <h3>Comunidad Queveva</h3>
                 <p>Proyecto Académico de Investigación y Caracterización Territorial.</p>
-                <p class="location">📍 Tolú Viejo, Sucre, Colombia</p>
+                <p class="location">Tolú Viejo, Sucre, Colombia</p>
             </div>
             <div class="footer-credits">
                 <p>Apoyado en el marco del Fondo Especial para Comunidades Indígenas - ICETEX.</p>
@@ -149,7 +161,7 @@
         </div>
     </footer>
 
-    <div id="lightbox" class="lightbox" aria-hidden="true">
+    <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-label="Visor de fotografías">
         <button class="lightbox-close" aria-label="Cerrar imagen">&times;</button>
         <button class="lightbox-prev" aria-label="Imagen anterior">&#10094;</button>
         <div class="lightbox-content">
